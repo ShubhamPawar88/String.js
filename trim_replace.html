@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //1.trim()
+        //trim is used to reduce/remove blank spaces present at starting and at ending of the string
+
+        //in string.. length is not the function..its a property of string object
+    let s="    good evening    ";
+    document.write("<br> before trim s="+s.length);//20
+    let s1=s.trim();
+    document.write("<br> after trim s1="+s1.length);//12
+    document.write("<br> after trim s1="+s1);//trim does not removing middle blank spaces
+
+    //2.replace
+    //removing middle blank spaces from the string
+    let str1="javascript is a scripting language"
+    document.write("<br> before replace str1="+str1);
+  
+    //in below code "g" is global modifier which matches all the search,
+     //(not only the first search)
+    document.write("<br> after replace str1="+str1.replace(/ /g,""));  //old value,new value
+   </script> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string comparison
+        let s="hello";//literal
+        let ss= new String("hello");// using new 
+        // let ss="hello";//true 2 condition
+
+        document.write(s==ss);//true
+         //== operator checks ONLY the contents of the given strings(not the reference)..if the contents are same it returns true
+        document.write("<br>");
+        //=== operator checks  the contents as well as reference  of the given strings(not the reference)... if contents and reference both are same then === returns true
+        //here,s and ss are having same contents "hello", but the way of string creation(reference) is different thats why it returning false
+        document.write(s===ss);//false
+    </script>
+</body>
+</html>
